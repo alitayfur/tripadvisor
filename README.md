@@ -1,7 +1,7 @@
 
 # TRIPADVISOR API SAMPLE CLASS WITH PHP 
 
-(https://static.tacdn.com/img2/langs/tr/branding/rebrand/TA_logo_primary_v2.svg)
+![tripadvisor](https://static.tacdn.com/img2/langs/tr/branding/rebrand/TA_logo_primary_v2.svg)
 
 ## Why?
 
