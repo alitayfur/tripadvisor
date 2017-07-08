@@ -5,7 +5,7 @@
 
 # Config
   
-  private $config = [
+    $ private $config = [
 		'root'       => 'data',  // query cache folder
 		'cache_time' => (60*24), // query cache time
 		'key'        => '',      // partner key
