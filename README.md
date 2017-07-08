@@ -13,7 +13,7 @@ Price level symbol, accommodation category/subcategory, attraction type, restaur
 
 # Config
   
-    $ private $config = [
+     private $config = [
 		'root'       => 'data',  // query cache folder
 		'cache_time' => (60*24), // query cache time
 		'key'        => '',      // partner key
@@ -23,12 +23,13 @@ Price level symbol, accommodation category/subcategory, attraction type, restaur
 	];
 
 # Using
+getQuery($template,$value,$query='',$type='')
 
-    $ 
-     $ta = new tripadvisor();
-                  getQuery($template,$value,$query='',$type='')
-		  $template = (map|location|location_mapper)   [Documentation](https://developer-tripadvisor.com/content-api/documentation/)
-		  $type     = (hotels|restaurants|Attractions) [Content API](https://developer-tripadvisor.com/content-api/business-content/categories-subcategories-and-types/)
+$template = (map|location|location_mapper)   [Documentation](https://developer-tripadvisor.com/content-api/documentation/)
+
+$type     = (hotels|restaurants|Attractions) [Content API](https://developer-tripadvisor.com/content-api/business-content/categories-subcategories-and-types/)
+
+     $ta   = new tripadvisor();                  
      $data = $ta->getQuery('map','36.544493,31.987939');
      $data = $ta->getQuery('location','89575','','hotels');
      $data = $ta->getQuery('location_mapper','37.857257,27.247885',['q'=>'otel Carina']);
